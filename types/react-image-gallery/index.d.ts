@@ -81,6 +81,7 @@ export interface ReactImageGalleryProps {
     onMouseLeave?: React.MouseEventHandler<HTMLDivElement> | undefined;
     onThumbnailError?: React.ReactEventHandler<HTMLImageElement> | undefined;
     onThumbnailClick?: ((event: React.MouseEvent<HTMLAnchorElement>, index: number) => void) | undefined;
+    onBulletClick?: ((event: React.MouseEvent<HTMLButtonElement>, index: number) => void) | undefined;
     renderCustomControls?: (() => React.ReactNode) | undefined;
     renderLeftNav?: ((onClick: React.MouseEventHandler<HTMLElement>, disabled: boolean) => React.ReactNode) | undefined;
     renderRightNav?:
